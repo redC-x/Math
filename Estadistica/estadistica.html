@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Estadística - Math</title>
+
+    <link
+        rel="stylesheet"
+        href="estadistica.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="estadistica">
+
+        <button
+            class="boton-volver"
+            onclick="window.location.href='../index.html'">
+
+            ← Volver al menú
+
+        </button>
+
+
+        <h1>📊 Estadística</h1>
+
+
+        <div class="estadistica-panel">
+
+            <label>
+                Datos:
+            </label>
+
+            <textarea
+                id="datos"
+                placeholder="Ejemplo: 10, 20, 15, 30, 25"
+            ></textarea>
+
+
+            <button
+                class="boton-calcular"
+                onclick="calcularEstadistica()">
+
+                📊 Calcular
+
+            </button>
+
+
+            <div
+                id="resultado"
+                class="resultado">
+
+                <p>Media: —</p>
+                <p>Mediana: —</p>
+                <p>Moda: —</p>
+                <p>Mínimo: —</p>
+                <p>Máximo: —</p>
+                <p>Rango: —</p>
+                <p>Varianza: —</p>
+                <p>Desviación estándar: —</p>
+                <p>Cantidad de datos: —</p>
+                <p>Suma: —</p>
+
+            </div>
+
+
+            <div
+                id="tablaFrecuencias"
+                class="tabla-frecuencias">
+            </div>
+
+
+            <div class="grafica-estadistica">
+
+                <h3>📊 Gráfica de frecuencias</h3>
+
+                <canvas
+                    id="graficaEstadistica">
+                </canvas>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="estadistica.js"></script>
+
+</body>
+
+</html>

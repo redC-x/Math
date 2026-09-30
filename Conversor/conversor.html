@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Conversor - Math</title>
+
+    <link
+        rel="stylesheet"
+        href="conversor.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="conversor">
+
+        <button
+            class="boton-volver"
+            onclick="window.location.href='../index.html'">
+
+            ← Volver al menú
+
+        </button>
+
+
+        <h1>🔄 Conversor</h1>
+
+
+        <div class="conversor-panel">
+
+            <label>
+                Categoría:
+            </label>
+
+            <select id="categoria">
+
+                <option value="longitud">
+                    Longitud
+                </option>
+
+                <option value="masa">
+                    Masa
+                </option>
+
+                <option value="temperatura">
+                    Temperatura
+                </option>
+
+            </select>
+
+
+            <label>
+                Cantidad:
+            </label>
+
+            <input
+                type="number"
+                id="cantidad"
+                placeholder="Ejemplo: 100"
+            >
+
+
+            <label>
+                De:
+            </label>
+
+            <select id="unidadOrigen"></select>
+
+
+            <label>
+                A:
+            </label>
+
+            <select id="unidadDestino"></select>
+
+
+            <button
+                class="boton-convertir"
+                onclick="convertir()">
+
+                🔄 Convertir
+
+            </button>
+
+
+            <div
+                id="resultado"
+                class="resultado">
+
+                Resultado: —
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="conversor.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+.formulas {
+    max-width: 900px;
+    margin: auto;
+}
+
+
+/* =========================
+   BOTÓN VOLVER
+========================= */
+
+.boton-volver {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    background: #1e293b;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.boton-volver:hover {
+    background: #334155;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+h1 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    text-align: center;
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   CATEGORÍAS
+========================= */
+
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.categoria-btn {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    background: #1e293b;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.categoria-btn:hover {
+    background: #334155;
+}
+
+.categoria-btn.activo {
+    background: #2563eb;
+}
+
+
+/* =========================
+   BUSCADOR
+========================= */
+
+.buscador {
+    margin-bottom: 20px;
+}
+
+.buscador input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    background: #1e293b;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.buscador input::placeholder {
+    color: #94a3b8;
+}
+
+
+/* =========================
+   LISTA DE FÓRMULAS
+========================= */
+
+.lista-formulas {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.formula-card {
+    padding: 18px;
+    border-radius: 14px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    cursor: pointer;
+    transition: transform 0.15s;
+}
+
+.formula-card:hover {
+    transform: translateY(-2px);
+    background: #273449;
+}
+
+.formula-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.formula-card p {
+    margin: 0;
+    color: #cbd5e1;
+}
+
+
+/* =========================
+   DETALLE
+========================= */
+
+.detalle-formula {
+    padding: 20px;
+    border-radius: 14px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    margin-bottom: 30px;
+}
+
+.detalle-formula h2 {
+    margin-top: 0;
+}
+
+.detalle-formula p {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   MÓVIL
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .categorias {
+        flex-direction: column;
+    }
+
+    .categoria-btn {
+        width: 100%;
+    }
+
+    .lista-formulas {
+        grid-template-columns: 1fr;
+    }
+
+}

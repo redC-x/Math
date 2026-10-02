@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Fórmulas - MathLab</title>
+
+    <link
+        rel="stylesheet"
+        href="formulas.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="formulas">
+
+        <!-- VOLVER -->
+
+        <button
+            class="boton-volver"
+            onclick="window.location.href='../index.html'"
+        >
+
+            ← Volver al menú
+
+        </button>
+
+
+        <!-- TÍTULO -->
+
+        <h1>📚 Fórmulas</h1>
+
+        <p class="descripcion">
+
+            Explora fórmulas matemáticas, físicas y de electrónica
+            y aprende cómo utilizarlas.
+
+        </p>
+
+
+        <!-- CATEGORÍAS -->
+
+        <div class="categorias">
+
+            <button
+                class="categoria-btn activo"
+                data-categoria="matematicas"
+            >
+
+                📐 Matemáticas
+
+            </button>
+
+
+            <button
+                class="categoria-btn"
+                data-categoria="fisica"
+            >
+
+                ⚙️ Física
+
+            </button>
+
+
+            <button
+                class="categoria-btn"
+                data-categoria="electronica"
+            >
+
+                🔌 Electrónica
+
+            </button>
+
+        </div>
+
+
+        <!-- BUSCADOR -->
+
+        <div class="buscador">
+
+            <input
+                type="text"
+                id="buscarFormula"
+                placeholder="🔎 Buscar fórmula..."
+            >
+
+        </div>
+
+
+        <!-- LISTA DE FÓRMULAS -->
+
+        <div
+            id="listaFormulas"
+            class="lista-formulas"
+        >
+
+            <!-- Las fórmulas aparecerán aquí -->
+
+        </div>
+
+
+        <!-- DETALLE DE LA FÓRMULA -->
+
+        <div
+            id="detalleFormula"
+            class="detalle-formula"
+        >
+
+            <h2>
+                Selecciona una fórmula
+            </h2>
+
+            <p>
+                Aquí aparecerá la explicación,
+                variables y calculadora de la fórmula.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="formulas.js"></script>
+
+</body>
+
+</html>
